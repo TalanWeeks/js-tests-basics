@@ -12,7 +12,8 @@ let goodDoggo = { name: "bob", legs: 3, tail: true, likes: [1,2,3,4]
 
 // write a function that returns the value of the legs property on your dog object using dot notation.
 function howManyLegs() {
-  // your code inside here
+  dogLegs = goodDoggo.legs
+  return dogLegs
   // don't forget to use the return keyword
 }
 
@@ -29,7 +30,8 @@ let cat = {
 // "Pickles" to "Kevin".Then use either dot or bracket notation to return 
 // the value of the name property.
 function renameCat() {
-  // your code inside here
+  cat.name = "Kevin"
+  return cat.name
 }
 
 // Create a function that uses dot or bracket notation to create a property 
@@ -37,16 +39,18 @@ function renameCat() {
 // Then return the value of the color property.
 
 function colorTheCat() {
-  // your code inside here
+  cat.color = "red"
+  return cat.color
 }
 
 // Delete the whiskers property off of the cat object. You may use either dot or bracket notation.
 
+delete cat.whiskers
 
 // Write a function that uses dot AND bracket notation to access and return the 
 // value of the fourth item in the likes array("pets"). 
 // Example: objectName.property[indexNumber]
 
 function returnIndex(cat) {
-  // your code inside here
+  return cat.likes[3]
 }
