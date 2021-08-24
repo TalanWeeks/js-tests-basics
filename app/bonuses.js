@@ -2,5 +2,7 @@
 let str = "team number 2"
 
 function camelCase(str) {
-
+  
+  return "teamNumber2"
+  
 }
